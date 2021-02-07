@@ -1,0 +1,128 @@
+/* подключаем шрифты */
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700italic&display=swap");
+
+@font-face {
+  font-family: "Red October";
+  src: url("../fonts/RedOctober.woff2") format("woff2"),
+    url("../fonts/RedOctober.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  /*убираем точки*/
+  list-style: none;
+}
+a, /* убираем у ссылок предустановки*/
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,/*убираем стили у заголовков*/
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  /* Убираем фантомный отступ от картинки */
+  vertical-align: top;
+}
+body {
+  line-height: 1;
+  color: #000;
+}
+/*-----------------------------------------*/
+.header {
+  font-family: "Red October";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.logo {
+  text-align: right;
+}
+
+ul > li {
+  display: inline-block;
+  margin: 10px 150px;
+}
+
+.link {
+  color: rgb(17, 89, 148);
+  font-size: 18px;
+  text-decoration: none;
+  background-color: slategrey;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+h1,
+h2 {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 28px;
+  text-align: center;
+  text-shadow: 2px 3px 2px rosybrown;
+}
+
+h2 {
+  max-width: 700px;
+  margin: 0 auto; /*центрируем*/
+}
+
+.text {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  margin: 50px;
+  overflow: auto;
+  border: dotted rosybrown;
+}
+
+.img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+h3 {
+  margin: 40px 10px;
+}
+.footer {
+  text-align: center;
+}
+
+#telefon {
+  max-width: 50px;
+}
+
+#facebook {
+  max-width: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#instagram {
+  max-width: 50px;
+}
